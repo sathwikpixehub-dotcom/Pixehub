@@ -1,0 +1,272 @@
+/* Remove Default Spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Page Background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+
+    /* Replace background.jpg with your image */
+    background-image: url("https://t3.ftcdn.net/jpg/01/10/40/52/360_F_110405220_HbToZ6DQgSMnPyEGbI3fSV6KJ1NEQJRX.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: white;
+    padding: 5px;
+}
+
+/* Website Title */
+.brand-title {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        90deg,
+        #075be8,
+        #8a00c2
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    border-left: 2px solid #526079;
+    padding-left: 18px;
+    margin-left: 15px;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #17243b;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #087f5b;
+}
+
+/* Main Content */
+.hero-content {
+    padding-top: 50pxpx;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+/* Your Name */
+.main-title {
+    font-size: clamp(35px, 5vw, 65px);
+    font-weight: 800;
+    color: #142b4c;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 50px;
+    align-items: center;
+
+}
+
+/* Green Name */
+.main-title span {
+    color: #087f50;
+}
+
+/* Introduction */
+.intro-text {
+    font-size: 22px;
+    line-height: 1.9;
+    color: #253b59;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        padding-top: 15px;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+
+    .hero-content {
+        padding-top: 70px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+
+    .navbar {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand-title {
+        font-size: 22px;
+        padding-left: 8px;
+        margin-left: 8px;
+    }
+
+
+    .intro-text {
+        font-size: 16px;
+        line-height: 1.8;
+
+    }
+}
+
+/* Header */
+header {
+
+    width: 100%;
+
+}
+
+/* Footer */
+.site-footer {
+    width: 100%;
+    background-color: #080b18;
+    color: white;
+    padding: 35px 15px 15px;
+    margin-top: 0;
+}
+
+.site-footer h3 {
+    color: #00e676;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.site-footer p {
+    margin: 12px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 8px 12px;
+}
+
+.footer-links a:hover {
+    color: #00e676;
+}
+
+.site-footer hr {
+    border-color: #777;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Mobile responsive */
+@media (max-width: 576px) {
+    .footer-links a {
+        margin: 8px;
+    }
+}
+/* Website Sections */
+.page-section {
+    height: 100vh;
+
+    /* Replace background.jpg with your image */
+    background-image: url("https://t3.ftcdn.net/jpg/01/10/40/52/360_F_110405220_HbToZ6DQgSMnPyEGbI3fSV6KJ1NEQJRX.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 70vh;
+    padding: 80px 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    scroll-margin-top: 20px;
+}
+
+/* Section Headings */
+.page-section h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #17243b;
+    
+}
+
+/* Green Heading Text */
+.page-section h1 span {
+    color: #087f50;
+}
+
+/* Section Paragraphs */
+.page-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Course Cards */
+.course-card {
+    height: 100%;
+    padding: 25px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: #087f50;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
